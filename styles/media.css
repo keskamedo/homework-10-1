@@ -1,0 +1,128 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .container-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .gvfren {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* Hide navigation menu */
+    nav ul {
+        display: none;
+    }
+
+    /* Improve `.city` fitting */
+    .city {
+        height: auto; /* Adjust dynamically */
+        background-size: contain; /* Prevents cutting off */
+        background-position: center center; /* Ensures good alignment */
+    }
+}
+
+@media (max-width: 768px) {
+    .container-section {
+        padding: 40px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .H1 {
+        font-size: 50px; /* Adjust for readability */
+    }
+
+    .H2 {
+        font-size: 16px;
+    }
+
+    .gvfren {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-block {
+        width: 100%; /* Full width for better spacing */
+    }
+
+    /* Ensure images resize well */
+    .images {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Improve `.city` on tablets */
+    .city {
+        height: 450px; /* Better height on medium screens */
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .div {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .txt-h1 {
+        font-size: 18px;
+    }
+
+    .txt-h2 {
+        font-size: 15px;
+    }
+
+    .H1 {
+        font-size: 40px; /* Smaller screen readability */
+    }
+
+    .H2 {
+        font-size: 14px;
+    }
+
+    .images {
+        width: 100%;
+        height: auto;
+    }
+
+    .headline h1,
+    .text p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Ensure padding and alignment stay comfortable */
+    .container-section {
+        padding: 30px;
+    }
+
+    /* Perfect `.city` fitting on mobile */
+    .city {
+        height: 400px; /* Best fit for phones */
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .div {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+}
