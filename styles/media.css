@@ -1,128 +1,156 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
-    .container {
-        width: 95%;
-    }
+  body {
+    width: 100%;
+    padding: 0 16px;
+  }
 
-    .container-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
+  nav ul {
+    display: none;
+  }
 
-    .gvfren {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
+  .burger-icon {
+    display: inline-block;
+    margin-right: 20px;
+  }
 
-    /* Hide navigation menu */
-    nav ul {
-        display: none;
-    }
+  .container,
+  .container-section,
+  .text-container,
+  .gvfren {
+    width: 100% ;
+    max-width: 100% ;
+    box-sizing: border-box;
+    padding: 0 16px;
+    flex-wrap: wrap;
+  }
 
-    /* Improve `.city` fitting */
-    .city {
-        height: auto; /* Adjust dynamically */
-        background-size: contain; /* Prevents cutting off */
-        background-position: center center; /* Ensures good alignment */
-    }
+  .text,
+  .headline,
+  .H1,
+  .H2,
+  .txt-h1,
+  .txt-h2,
+  .images {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .H1 {
+    font-size: 60px;
+  }
+
+  .H2 {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .headline {
+    font-size: 16px;
+  }
+
+  .city {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 0;
+  }
+
+  .images {
+    order: 2;
+    height: auto;
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
-    .container-section {
-        padding: 40px;
-    }
+  .H1 {
+    font-size: 45px;
+  }
 
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .H2 {
+    font-size: 14px;
+  }
 
-    .H1 {
-        font-size: 50px; /* Adjust for readability */
-    }
+  .txt-h1 {
+    font-size: 18px;
+  }
 
-    .H2 {
-        font-size: 16px;
-    }
+  .txt-h2 {
+    font-size: 15px;
+  }
 
-    .gvfren {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  .city {
+    height: 400px;
+  }
 
-    .service-block {
-        width: 100%; /* Full width for better spacing */
-    }
+  .div {
+    text-align: center;
+    width: 100%;
+  }
 
-    /* Ensure images resize well */
-    .images {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Improve `.city` on tablets */
-    .city {
-        height: 450px; /* Better height on medium screens */
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .div {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-    }
+  .images {
+    max-height: 350px;
+  }
 }
 
 @media (max-width: 480px) {
-    .txt-h1 {
-        font-size: 18px;
-    }
+  .H1 {
+    font-size: 30px;
+  }
 
-    .txt-h2 {
-        font-size: 15px;
-    }
+  .H2 {
+    font-size: 12px;
+  }
 
-    .H1 {
-        font-size: 40px; /* Smaller screen readability */
-    }
+  .txt-h1 {
+    font-size: 15px;
+  }
 
-    .H2 {
-        font-size: 14px;
-    }
+  .txt-h2 {
+    font-size: 13px;
+  }
 
-    .images {
-        width: 100%;
-        height: auto;
-    }
+  .images {
+    height: auto;
+    max-height: 250px;
+  }
 
-    .headline h1,
-    .text p {
-        font-size: 16px;
-        text-align: center;
-    }
+  .city {
+    height: 300px;
+  }
+}
 
-    /* Ensure padding and alignment stay comfortable */
-    .container-section {
-        padding: 30px;
-    }
+@media (max-width: 350px) {
+  .text {
+    font-size: 11px;
+  }
 
-    /* Perfect `.city` fitting on mobile */
-    .city {
-        height: 400px; /* Best fit for phones */
-        background-size: cover;
-        background-position: center center;
-    }
+  .headline {
+    font-size: 10px;
+  }
 
-    .div {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-    }
+  .H1 {
+    font-size: 22px;
+  }
+
+  .H2 {
+    font-size: 10px;
+  }
+
+  .city {
+    height: 250px;
+  }
 }

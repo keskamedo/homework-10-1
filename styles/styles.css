@@ -1,5 +1,13 @@
-body{
-  max-width: 1500px;
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  max-width: 1200px;
 }
 
 header {
@@ -10,11 +18,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 ul {
   display: flex;
   gap: 52px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 a {
@@ -25,21 +37,29 @@ a {
   font-weight: 400;
   color: #636060;
   font-family: "Helvetica";
+  text-decoration: none;
 }
 
-.logo{
+.burger-icon {
+  display: none;
+  margin-top: 15px;
+}
+
+.logo {
   width: 33px;
   height: 42px;
-} 
+}
 
 .container {
   max-width: 1300px;
   width: 90%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
-.H1{
-  width: 625px;
+.H1 {
+  max-width: 100%;
+  width: 100%;
   height: 91px;
   font-size: 79px;
   font-weight: 700;
@@ -47,15 +67,16 @@ a {
   font-family: "Helvetica";
 }
 
-.H2{
-  width: 333px;
+.H2 {
+  max-width: 100%;
+  width: 100%;
   height: 22px;
   font-size: 19px;
   font-weight: 400;
   font-family: "Helvetica";
 }
 
-.H3{
+.H3 {
   text-transform: uppercase;
   width: 89px;
   height: 20px;
@@ -66,8 +87,9 @@ a {
   font-family: "Helvetica";
 }
 
-.txt-h1{
-  width: 214px;
+.txt-h1 {
+  max-width: 100%;
+  width: 100%;
   height: 32px;
   font-weight: 400;
   font-size: 28px;
@@ -75,8 +97,9 @@ a {
   font-family: "Helvetica";
 }
 
-.txt-h2{
-  width: 235px;
+.txt-h2 {
+  max-width: 100%;
+  width: 100%;
   height: 115px;
   font-weight: 400;
   font-size: 20px;
@@ -85,12 +108,15 @@ a {
 }
 
 .city {
-    background-image: url("../images/city.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 606px;
-    position: relative;
+  background-image: url("../images/city.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 606px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
 }
 
 .div {
@@ -99,56 +125,71 @@ a {
   align-items: center;
   color: white;
   flex-direction: column;
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   font-family: "Helvetica";
+  text-align: center;
+  width: 100%;
 }
 
-
-.container-section{
-  padding: 84px 100px;
+.container-section {
+  padding: 84px 16px;
   display: flex;
   gap: 84px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 
-.gvfren{
+.text-container {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.gvfren {
   display: flex;
   gap: 33px;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  flex: 2 1 600px;
 }
 
 .images {
-    width: 286px;
-    height: 195px;
-    margin-bottom: 23px;
-
+  width: 100%;
+  max-width: 286px;
+  height: 195px;
+  margin-bottom: 23px;
+  display: flex;
 }
 
 .headline {
-    width: 259px;
-    height: 22px;
-    font-weight: 400;
-    font-size: 19px;
-    margin-bottom: 15.5px;
-    font-family: "Helvetica";
+  width: 100%;
+  max-width: 259px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 19px;
+  margin-bottom: 15.5px;
+  font-family: "Helvetica";
 }
 
 .text {
-    width: 286px;
-    height: 63px;
-    font-weight: 400;
-    font-size: 18px;
-    color: #636060;
-    font-family: "Helvetica";
+  width: 100%;
+  max-width: 286px;
+  height: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #636060;
+  font-family: "Helvetica";
 }
 
-@font-face{
-    font-family:"helvetica";
-    src:url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+@font-face {
+  font-family: "helvetica";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+       url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+       url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
 }
